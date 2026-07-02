@@ -1,0 +1,109 @@
+/* Configurações Globais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif; /* Fonte serifada combina mais com temas artísticos */
+}
+
+body {
+    background-color: #121214; /* Fundo escuro para a atmosfera misteriosa */
+    color: #e1e1e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Principal (<main>) */
+.container {
+    max-width: 700px;
+    background-color: #1a1a1e;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Estilização do Título */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+/* Destaque com a tag <strong> */
+h1 strong {
+    color: #9b4dca; /* Um tom de roxo/violeta, muito associado ao mistério e simbolismo */
+    font-weight: 700;
+}
+
+/* Parágrafo de Introdução */
+.introducao {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #a8a8b3;
+    margin-bottom: 30px;
+}
+
+/* Moldura e Imagem */
+.moldura-imagem {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.moldura-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    transition: transform 0.5s ease;
+}
+
+/* Efeito sutil ao passar o mouse na imagem */
+.moldura-imagem img:hover {
+    transform: scale(1.03);
+}
+
+/* Container dos Botões */
+.botoes-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Garante que quebre linha em telas de celular */
+}
+
+/* Estilização dos Links de Botão (<a>) */
+.botao {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #9b4dca;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao:hover {
+    background-color: #823ca8;
+    transform: translateY(-2px);
+}
+
+/* Segundo Botão (Estilo Diferente) */
+.botao-secundario {
+    background-color: transparent;
+    border: 2px solid #a8a8b3;
+    color: #a8a8b3;
+}
+
+.botao-secundario:hover {
+    background-color: #a8a8b3;
+    color: #121214;
+}
